@@ -3,240 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dina susan calcina aquino | Perfil Profesional Ampliado</title>
+    <title>Dina Susan Calcina Aquino - CV</title>
     <style>
-        :root {
-            --primary: #1e3a8a;
-            --secondary: #0284c7;
-            --dark: #1f2937;
-            --light: #f3f4f6;
-            --white: #ffffff;
-        }
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--dark);
-            background-color: var(--light);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
             line-height: 1.6;
+            padding: 30px 15px;
         }
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: var(--white);
-            padding: 3.5rem 1rem 3rem 1rem;
-            text-align: center;
-            position: relative;
-        }
-        .header-content {
-            max-width: 900px;
+        .cv-wrapper {
+            max-width: 850px;
             margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-        }
-        @media (min-width: 600px) {
-            .header-content {
-                flex-direction: row;
-                text-align: left;
-                justify-content: center;
-            }
-        }
-        .profile-photo {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            border: 4px solid var(--white);
-            object-fit: cover;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-            background-color: #e5e7eb;
-        }
-        .header-text h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-            letter-spacing: -0.025em;
-        }
-        .header-text p {
-            font-size: 1.15rem;
-            opacity: 0.95;
-        }
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        section {
-            background-color: var(--white);
-            padding: 1.8rem;
-            margin-bottom: 1.5rem;
+            background: #ffffff;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
         }
-        h2 {
-            color: var(--primary);
-            border-bottom: 2px solid var(--secondary);
-            padding-bottom: 0.3rem;
-            margin-bottom: 1.2rem;
-            font-size: 1.4rem;
-            display: flex;
-            align-items: center;
+        .header {
+            background-color: #0f2b46;
+            color: #ffffff;
+            padding: 40px;
+            text-align: center;
+            border-bottom: 4px solid #1d4ed8;
         }
-        ul {
-            list-style-type: none;
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
         }
-        li {
-            margin-bottom: 1rem;
-            padding-left: 1.4rem;
-            position: relative;
+        .header p {
+            color: #93c5fd;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
         }
-        li::before {
-            content: "▹";
-            position: absolute;
-            left: 0;
-            color: var(--secondary);
-            font-weight: bold;
-            font-size: 1.1rem;
+        .content {
+            padding: 40px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #0f2b46;
+            font-size: 18px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .profile-desc {
+            text-align: justify;
+            font-size: 15px;
+        }
+        .item {
+            margin-bottom: 15px;
+        }
+        .item-title {
+            font-weight: 700;
+            color: #1e293b;
+            font-size: 15px;
+        }
+        .item-sub {
+            color: #64748b;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .item-text {
+            font-size: 14px;
+            color: #334155;
         }
         .badge {
-            background-color: #e0f2fe;
-            color: #0369a1;
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            font-weight: bold;
             display: inline-block;
-            margin-top: 0.3rem;
+            background: #e2e8f0;
+            color: #334155;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            font-weight: 500;
         }
-        .project-title {
-            font-weight: bold;
-            color: var(--dark);
-        }
-        .pub-authors {
-            font-size: 0.9rem;
-            color: #4b5563;
-            font-style: italic;
-        }
-        .pub-meta {
-            font-size: 0.85rem;
-            color: #6b7280;
-            margin-top: 0.1rem;
-        }
-        footer {
-            text-align: center;
-            padding: 2.5rem;
-            font-size: 0.9rem;
-            color: #6b7280;
-            border-top: 1px solid #e5e7eb;
-        }
-        .links-investigador {
-            margin-top: 0.8rem;
-        }
-        .links-investigador a {
-            color: var(--white);
-            text-decoration: underline;
-            margin: 0 0.5rem;
-            font-size: 0.9rem;
-            opacity: 0.85;
-        }
-        .links-investigador a:hover {
-            opacity: 1;
+        .highlight-box {
+            background: #f8fafc;
+            border-left: 4px solid #10b981;
+            padding: 15px;
+            border-radius: 0 6px 6px 0;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="header-content">
-            <!-- Foto de Investigador enlazada directamente desde el repositorio oficial CTI Vitae del CONCYTEC -->
-            <img src="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=67043" alt="M.Sc. Romel Percy Melgarejo Bolivar" class="profile-photo">
-            <div class="header-text">
-                <h1>M.Sc. Romel Percy Melgarejo Bolivar</h1>
-                <p>Docente Universitario | Especialista en TI, Ciencia de Datos e Ingeniería Estadística e Informática</p>
-                <div class="links-investigador">
-                    <a href="https://ctivitae.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do?id_investigador=67043" target="_blank">Ficha Concytec</a> | 
-                    <a href="https://scholar.google.com/citations?user=G5veeOIAAAAJ" target="_blank">Google Académico</a>
-                </div>
+<div class="cv-wrapper">
+    <div class="header">
+        <h1>Dina Susan Calcina Aquino</h1>
+        <p>Ingeniera Estadística e Informática</p>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <h2>Perfil Profesional</h2>
+            <p class="profile-desc">
+                Profesional egresada de la Universidad Nacional del Altiplano (UNA PUNO), con formación sólida en ingeniería analítica, modelamiento de datos estadísticos y desarrollo informático. Competente en la automatización de procesos estadísticos estructurados y optimización operativa orientada al despliegue técnico de información.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Historial Académico</h2>
+            <div class="item">
+                <div class="item-title">Ingeniería Estadística e Informática</div>
+                <div class="item-sub">Universidad Nacional del Altiplano — Facultad de Ingeniería Estadística e Informática</div>
+                <div class="item-text">Estudios profesionales concluidos con énfasis en metodologías cuantitativas y desarrollo de sistemas informáticos.</div>
+            </div>
+            <div class="item">
+                <div class="item-title">Validación de Prácticas Pre-Profesionales</div>
+                <div class="item-sub">Consejo de Facultad FINESI — Registro Académico Oficial</div>
+                <div class="item-text">Sustentación técnica de metodologías de analítica aplicadas en entornos institucionales reales.</div>
             </div>
         </div>
-    </header>
 
-    <div class="container">
-        
-        <section id="sobre-mi">
-            <h2>Resumen Profesional</h2>
-            <p>Magíster Scientiae en Informática con mención en Gerencia de Tecnologías de Información y Comunicaciones por la Universidad Nacional del Altiplano. Profesional especializado en Ciencia de Datos, redes telemáticas, analítica probabilística y desarrollo avanzado de software. Cuenta con un destacado historial de registro de propiedad intelectual ante INDECOPI, liderazgo gremial y publicaciones científicas indexadas globalmente.</p>
-        </section>
+        <div class="section">
+            <h2>Méritos Académicos</h2>
+            <div class="highlight-box">
+                <div class="item-title" style="color: #0f2b46;">Beneficiaria de la Beca de Permanencia de Estudios Nacional</div>
+                <div class="item-sub" style="color: #059669;">Programa Nacional de Becas y Crédito Educativo (PRONABEC)</div>
+                <div class="item-text">Otorgada en estricto orden de mérito a estudiantes con rendimiento académico destacado en carreras profesionales científicas.</div>
+            </div>
+        </div>
 
-        <section id="educacion">
-            <h2>Formación Académica</h2>
-            <ul>
-                <li>
-                    <strong>Magíster Scientiae en Informática</strong><br>
-                    Mención en Gerencia de Tecnologías de Información y Comunicaciones — Universidad Nacional del Altiplano
-                </li>
-                <li>
-                    <strong>Ingeniero Estadístico e Informático</strong><br>
-                    Título Profesional — Universidad Nacional del Altiplano
-                </li>
-                <li>
-                    <strong>Estudios de Especialización Tecnológica (En curso)</strong><br>
-                    Mecatrónica Automotriz — Instituto Superior Tecnológico José Antonio Encinas (Puno)
-                </li>
-            </ul>
-        </section>
+        <div class="section">
+            <h2>Competencias Técnicas</h2>
+            <div>
+                <span class="badge">Lenguaje R</span>
+                <span class="badge">Python</span>
+                <span class="badge">Análisis Estadístico</span>
+                <span class="badge">Bases de Datos SQL</span>
+                <span class="badge">Microsoft Excel Avanzado</span>
+                <span class="badge">SPSS</span>
+            </div>
+        </div>
+    </div>
+</div>
 
-        <section id="experiencia">
-            <h2>Experiencia Destacada</h2>
-            <ul>
-                <li>
-                    <strong>Docente Universitario e Investigador</strong> — Universidad Nacional del Altiplano Puno<br>
-                    <span class="badge">2020 - Actualidad</span>
-                </li>
-                <li>
-                    <strong>Presidente del Capítulo de Ingenieros Estadísticos e Informáticos</strong> — Colegio de Ingenieros del Perú (CD Puno)<br>
-                    <span class="badge">2022 - Actualidad</span>
-                </li>
-                <li>
-                    <strong>Docente Auxiliar Ordinario</strong> — Universidad Nacional de Moquegua<br>
-                    <span class="badge">2015</span>
-                </li>
-                <li>
-                    <strong>Instructor Técnico</strong> — Instituto de Informática de la UNA Puno<br>
-                    <span class="badge">2016</span>
-                </li>
-            </ul>
-        </section>
-
-        <section id="investigacion">
-            <h2>Producción Científica y Publicaciones</h2>
-            <ul>
-                <li>
-                    <strong>Artículo de Revista Internacional Indexada (2022):</strong><br>
-                    <span class="project-title">"A Lightweight Hybrid Dilated Ghost Model-Based Approach for the Prognosis of Breast Cancer"</span>
-                    <div class="pub-authors">E. Ramirez-Asis, R. P. Melgarejo Bolivar, L. A. Gonzales, S. Chaudhury, R. Kashyap, etc.</div>
-                    <div class="pub-meta">Revista: <em>Computational Intelligence and Neuroscience</em> | DOI: 10.1155/2022/9325452</div>
-                </li>
-                <li>
-                    <strong>Capítulo de Libro Técnico (2023):</strong><br>
-                    <span class="project-title">"Predicción de diabetes en mujeres mediante un modelo probabilístico basado en Redes Bayesianas"</span>
-                    <div class="pub-authors">Romel Percy Melgarejo Bolivar</div>
-                    <div class="pub-meta">Libro: <em>O Cuidado em Saúde Baseado em Evidências</em> | DOI: 10.37885/230412748</div>
-                </li>
-                <li>
-                    <strong>Artículo de Revista de Posgrado (2022):</strong><br>
-                    <span class="project-title">"Arquitectura pervasiva con tecnologías WebRTC híbridas para el desarrollo de un framework Modelo Vista Controlador de tiempo real"</span>
-                    <div class="pub-authors">Ramiro Pedro Laura Murillo, Romel Percy Melgarejo Bolivar</div>
-                    <div class="pub-meta">Revista: <em>Revista de Investigaciones de la Escuela de Posgrado UNA</em> | DOI: 10.26788/riepg.v9i4.1632</div>
-                </li>
-                <li>
-                    <strong>Libro / Monografía Académica (2015):</strong><br>
-                    <span class="project-title">"Red Privada Virtual para la Prestación de Servicios Multimedia en el Campus Universitario de la Universidad Nacional del Altiplano"</span>
-                    <div class="pub-meta">Repositorio Institucional UNA Puno | Código de Biblioteca: Facultad de Ingeniería Estadística e Informática</div>
-                </li>
-                <li>
-                    <strong>Artículo de Investigación en Ciencias Sociales (2019):</strong><br>
-                    <span class="project-title">"La comunicación interna en los trabajadores administrativos de la UNA Puno"</span>
+</body>
+</html>
